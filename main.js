@@ -64,6 +64,12 @@ define([
         name: "TAP Home Page",
         link: "http://trustedanalytics.org/",
         title: "Trusted Analytics Platform Home Page"
+      },
+      "community":
+      {
+        name: "TAP Community",
+        link: "https://community.trustedanalytics.org/",
+        title: "Trusted Analytifcs Platform Community"
       }
     }
     
