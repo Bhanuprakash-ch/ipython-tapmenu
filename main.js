@@ -13,11 +13,11 @@ define([
       {
         name: "Install ATK Client",
         snippet: "#To install direclty from a running ATK server use \n" +
-                "#!pip2.7 install SERVER_URI/client\n\n"+
+                "#!pip install SERVER_URI/client\n\n"+
                 "#To install from pypi.python.org\n"+
-                "#!pip2.7 install trustedanalytics\n\n" +
+                "#!pip install trustedanalytics\n\n" +
                 "#a specific version can be installed by providing the version after the package name\n" +
-                "#!pip2.7 install trustedanalytics==0.4.2.dev201512019643\n",
+                "#!pip install trustedanalytics==0.4.2.dev201512019643\n",
         id: "install-atk",
         title: "Install ATK Client"
       },
@@ -112,7 +112,7 @@ define([
             data.releases[key][0]["name"] = key;
             data.releases[key][0]["link"] = "#";
             data.releases[key][0]["snippet"] = "#This will install version "+key+" of the ATK client\n"+
-                                               "!pip2.7 install trustedanalytics=="+key;
+                                               "!pip install trustedanalytics=="+key;
             data.releases[key][0]["classs"] = "pypi-install";
             
             releases.push(data.releases[key][0]);
@@ -144,7 +144,7 @@ define([
           "title": "Install the client directly from an ATK server instance.",
           "link": "#",
           "snippet": "#Replace YOUR_ATK_SERVER_URL with the URL to your ATK server instance. \n\n" +
-                     "!pip2.7 install YOUR_ATK_SERVER_URL/client\n\n"})
+                     "!pip install YOUR_ATK_SERVER_URL/client\n\n"})
           
           console.log(TAP_LINKS);
           },
